@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nasa Generator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Nasa Image Date Generator</h1>
+
+        <form id='form_nasa'>
+            <fieldset >
+            <label for='Date_text'>Input the Date you would want to see(YYYY-MM-DD)</label>
+            <input type="text" name='Date_text' id='Date_text'>
+          <input type="submit" value="See Space!" id='Sub_btn'>
+          </fieldset>
+        </form>
+        <section class="results hidden">
+          <h2>On this date:</h2>
+          <img class="results-img" alt="placeholder">
+          <p id='text_des'></p>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
